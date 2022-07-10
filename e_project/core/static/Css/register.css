@@ -1,0 +1,133 @@
+:root{
+    --primary-color: #D19898;
+    --login-card: #fff;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background: var(--primary-color);
+}
+.container{
+    width: 20rem;
+    height: 35rem;
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--login-card);
+    border-radius: 1rem;
+}
+.main-card{
+    width: 100%;
+    height: 100%;
+}
+form{
+    width: 100%;
+    height: 100%;
+    margin-top: 2rem;
+}
+fieldset{
+    font-family: sans-serif;
+    border: 2px solid #D19898;
+    background: #ddd;
+    border-radius: 5px;
+    padding: 15px;
+}
+fieldset legend{
+    background: #D19898;
+    color: #fff;
+    padding: 5px 10px ;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 0 5px #ddd;
+    margin-left: 20px;
+}
+form input[type="email"], input[type="password"], input[type="text"]{
+    width: 100%;
+    text-align: center;
+    height: 2rem;
+    border-radius: 3px;
+    border: none;
+    background: rgb(204, 191, 191);
+}
+form input[type="button"]{
+    background: #1d7c0a;
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid green;
+    color: #fff;
+}
+.form-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.form-links a{
+    text-decoration: none;
+}
+
+
+/* media queries for large screens devices */
+@media only screen and (max-width: 700px) {
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container{
+        width: 17rem;
+        height: 35rem;
+        margin-top: 7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--login-card);
+        border-radius: 2rem;
+    }
+}
+
+/* media queries for mobile screens */
+@media only screen and (max-width:412px){
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container{
+        width: 18rem;
+        height: 35rem;
+        margin-top: 7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--login-card);
+        border-radius: 2rem;
+    }
+ 
+    fieldset legend{
+        background: #D19898;
+        color: #fff;
+        padding: 3px 7px ;
+        font-size: 15px;
+        border-radius: 5px;
+        box-shadow: 0 0 0 5px #ddd;
+        margin-left: 20px;
+    }
+    form input[type="email"], input[type="password"]{
+        width: 100%;
+        font-size: 15px;
+    }
+    .form-links a{
+        text-decoration: none;
+        font-size: 15px;
+    }
+    ::placeholder{
+        font-size: 15px;
+    }
+    
+}
