@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dashboard</title>
     <script src="https://kit.fontawesome.com/3a9dc7910a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="{% static 'Css/dashboar.css'%}">
+    <link rel="stylesheet" href="{% static 'Css/dashboard.css'%}">
 </head>
   <body>
     <div class="main-container">
@@ -48,12 +48,58 @@
 
             <div class="manage-project">
               <h3>Manage Projects</h3>
+              <div class="table">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Group Name</th>
+                      <th>Project Name</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Sabs</td>
+                      <td>House project 1</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Yeng</td>
+                      <td>House project 2</td>
+                    </tr>                    <tr>
+                      <td>3</td>
+                      <td>Don</td>
+                      <td>House project 3</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>Reggea</td>
+                      <td>House project 4</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>Joyce</td>
+                      <td>House project 5</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
 
         </div>
 
-        <div>hhhhhhhhhhhhhhhhh</div>
-    </div>
+        <div class="right-side">
+          <div class="user-login">
+            <h4>Welcome Sabs!</h4>
+            <img src="{% static 'images/download.jpg' %}">
+          </div>
+          <div class="user-login-anchor">
+            <a href="{% url 'login' %}">Login</a>
+            <a href="{% url 'register' %}">Sign Up</a>
+          </div>
+        </div>
+      </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
