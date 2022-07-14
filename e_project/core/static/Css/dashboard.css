@@ -19,8 +19,9 @@ body{
 }
 .main-container{
     display: grid;
-    grid-template-columns: 15rem auto 20rem;
+    grid-template-columns: 15rem auto 18rem;
     gap: 1rem;
+    width: 100vw;
 }
 .logo h3{
     text-align: center;
@@ -143,14 +144,62 @@ nav ul li:last-child a{
 }
 
 /* manage-project project activities */
-.manage-project{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 .manage-project h3{
     text-align: center;
     font-size: 1.5rem;
     font-weight: 700;
     margin: 2rem;
+}
+.table{
+    width: 50rem;
+
+}
+.table table{
+    width: 100%;
+    background: var(--card);
+    border-radius: 1rem;
+}
+table thead tr th{
+    padding: 1rem;
+    margin: 2rem;
+}
+table tbody tr td{
+    padding: 0.3rem;
+    margin: 2rem;
+    padding-left: 5rem;
+}
+.right-side .user-login{
+    background: var(--card);
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1rem;
+}
+.right-side .user-login h4{
+    font-size: 1rem;
+    font-weight: 700;
+    transform: translateY(30%);
+    margin: 1rem;
+}
+.right-side .user-login img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 1rem;
+}
+.right-side .user-login-anchor{
+    background: var(--card);
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+.right-side .user-login-anchor a{
+    color: var(--danger);
+    text-decoration: none;
+    font-weight: 800;
 }
